@@ -1,0 +1,369 @@
+/*~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~*/
+BODY{
+	text-align: center;
+	margin: 0;
+	background: #D7DCD8 url("../img/fondofondo.jpg") no-repeat fixed right bottom;
+}
+A:link, A:visited, A:active{
+	text-decoration: none;
+}
+A:hover{
+	text-decoration: underline;
+}
+UL, OL{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+DIV{
+	overflow: hidden;
+}
+TD{
+	text-align: center;
+	width: 33%;
+}
+TABLE{
+	margin: auto;
+}
+IMG{
+	overflow: hidden;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~ Estructura Principal ~~~~~~*/
+#header{
+	border: 0px solid #0F0;
+	width: 100%;
+	min-width: 998px;
+	height: 118px;
+	margin: 0px auto;
+	background: #3E3F41;
+}
+#container{
+	border: 0px solid #F00;
+	margin: 20px auto;
+	width: 996px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+#footer{
+	border: 0px solid #FF0;
+	margin: 0px;
+	width: 100%;
+	min-width: 998px;
+	height: 40px;
+	text-align: right;
+	padding-top: 10px;
+	background: url("../img/PieFondo.png") repeat-x;
+}
+IMG.valign{
+	height: 100%;
+	vertical-align: middle;
+	width: 0px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~ Estructura Secundaria ~~~~~~*/
+.NON_Visible{
+	visibility: hidden;
+}
+#Midleheader{
+	border: 0px solid #F00;
+	width: 232px;
+	height: 100%;
+	margin-top: 0px;
+	float: left;
+}
+.logo{
+	border: 0px solid #F0F;
+	height: 95px;
+	width: 141px;
+	top: 12px;
+	left: 40px;
+	background: url("../img/logo.png") repeat;
+	position: absolute;
+	z-index: 2;
+	cursor: hand;
+}
+.logoi{
+	z-index: 3;
+	background-position: 0px 94px;
+}
+#Menus{
+	border: 0px solid #FFF;
+	margin: 0px;
+	margin-left: 500px;
+	height: 100%;
+	width: 320px;
+	text-align: center;
+	background: url("../img/MenuFondo.png") repeat-y;
+	text-align: center;
+}
+.Menus_Boton{
+	border: 0px solid #3E3F41;
+	width: 91;
+	height: 74;
+	float: left;
+	margin-top: 22px;
+	margin-left: 5px;
+	margin-right: 4px;
+	background: url("../img/MenuBotones.png") no-repeat;
+}
+.Menus_Boton_ini{
+	background-position: 0px 0px;
+}
+.Menus_Boton_ini:hover{
+	background-position: 0px -78px;
+}
+.Menus_Boton_ini:active{
+	background-position: 0px -157px;
+}
+.Menus_Boton_img{
+	background-position: -100px 0px;
+}
+.Menus_Boton_img:hover{
+	background-position: -100px -78px;
+}
+.Menus_Boton_img:active{
+	background-position: -100px -157px;
+}
+.Menus_Boton_vid{
+	background-position: -205px 0px;
+}
+.Menus_Boton_vid:hover{
+	background-position: -205px -78px;
+}
+.Menus_Boton_vid:active{
+	background-position: -205px -157px;
+}
+.C_Bordes{
+	border: 0px solid #F0F;
+	height: 38px;
+	width: 22px;
+	background: url("../img/ContainerBordes.gif") no-repeat;
+	float: left;
+}
+.C_Bordes_2{
+	background-position: -22px 0px;
+}
+.C_Bordes_3{
+	background-position: 0px -38px;
+}
+.C_Bordes_4{
+	background-position: -22px -38px;
+}
+.C_Cuerpo{
+	border: 0px solid #F0F;
+	background: url("../img/ContainerBarra.png") repeat-x;
+	height: 38px;
+	width: 740px;
+	float: left;
+}
+.C_Cuerpo_Abajo{
+	background-position: 0px -80px;
+}
+.Container_Cuerpo{
+	border: 0px solid #F0F;
+	clear: both;
+	min-height: 600px;
+	width: 785px;
+	background: url("../img/ContainerCuerpo.png") repeat-y;
+	text-align: center;
+}
+.tabla_pie{
+	float: right;
+}
+.post{
+	border: 0px solid #F0F;
+	width: 704px;
+	margin: 10px auto 50px;
+	overflow: visible !important;
+}
+.TituloMiniPost{
+	border: 0px solid #F0F;
+	width: 4px;
+	height: 43px;
+	background: url("../img/TituloPostLadoDer.png") no-repeat;
+	float: left;
+}
+.TituloMiniPost_STICKY{
+	border: 0px solid #F0F;
+	width: 4px;
+	height: 43px;
+	background: url("../img/STICKY_TituloPostLadoDer.png") no-repeat;
+	float: left;
+}
+.TituloMiniPostD{
+	background-position: -3px 0px;
+}
+.TituloMiniPostTxt{
+	float: left;
+	height: 41px;
+	width: 695px;
+	background: url("../img/TituloPostLadoCen.png") repeat-x;
+	float: left;
+	padding-top: 2px;
+}
+.TituloMiniPostTxt_STICKY{
+	height: 41px;
+	background: url("../img/STICKY_TituloPostLadoCen.png") repeat-x !important;
+}
+.RestoMiniPost{
+	border: 0px solid #F0F;
+	width: 695px;
+	margin: 30px auto;
+	padding-top: 10px;
+	text-align: center;
+	clear: both;
+/*overflow:visible;*/
+}
+.RestoMiniPostSocial{
+	text-align: center;
+	overflow: visible;
+}
+.imgminipost{
+	margin-bottom: -41px;
+}
+.paginacion{
+	border: 0px solid #F0F;
+	width: 472px;
+	height: 56px;
+	background: url("../img/FondoPaginacion.gif") no-repeat;
+	margin: 10px auto;
+	padding-top: 10px;
+}
+.Tituloboton{
+	height: 32px;
+	width: 33px;
+	margin-top: 2px;
+	background: url("../img/artititulobotones.png") no-repeat;
+	float: left;
+}
+.TitulobotonI{
+	height: 32px;
+	width: 33px;
+	margin-top: 2px;
+	background: url("../img/artititulobotones.png") no-repeat;
+	float: right;
+	background-position: -33px 0px;
+}
+.TitulobotonI:hover{
+	background-position: -33px -32px;
+}
+.Tituloboton:hover{
+	background-position: 0px -32px;
+}
+.social{
+	float: left;
+	text-align: center;
+}
+.botones_Sociales UL{
+	border: 0px solid #FFF;
+	list-style-type: none;
+	height: 40px;
+	width: 600px;
+	margin: auto;
+	padding-top: 7px;
+	text-align: center;
+}
+.botones_Sociales LI{
+	border: 0px solid #FFF;
+	float: left;
+	padding-right: 10px;
+	text-align: center;
+}
+.google-plus, .facebook-like, .twitter-follow{
+	border: 0px solid #FFF;
+	width: 100px;
+	margin: auto;
+	text-align: center;
+}
+.google-plus{
+	width: 70px !important;
+}
+.twitter-follow{
+	width: 200px !important;
+}
+.social_por_post{
+	border: 0px solid #0F0;
+	height: 34px;
+	width: 400px;
+	margin: auto;
+	margin-bottom: 20px;
+	text-align: center;
+	overflow: visible;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~  TEXTOS  ~~~~~~~~~~~~~~*/
+.Pie_Texto{
+	font-family: "Myriad Pro", "Trebuchet MS", Arial, Courier, mono;
+	text-shadow: 1px 1px 1px #4C5C6C;
+	font-weight: bold;
+	font-size: 14px;
+	color: #F1F1F1;
+}
+.MiniTituloPost{
+	padding-top: 5px !important;
+	font-family: "Trebuchet MS", Arial, Courier, mono;
+	font-size: 25px;
+	font-weight: bold;
+	color: #737272;
+	text-shadow: 1px 1px 1px #FFF;
+}
+.MiniTituloPost_STICKY{
+	padding-top: 5px !important;
+	font-family: 'Indie Flower', cursive,"Trebuchet MS", Arial, Courier, mono;
+	font-size: 25px;
+	font-weight: bold;
+	color: #d61d7a;
+	text-shadow: 1px 1px 1px #000;
+}
+.celda_STICKY{
+	width:100%;
+	height:100%;
+	font-family: "Trebuchet MS", Arial, Courier, mono;
+	font-size: 12px;
+	color: #000;
+	float: left;
+	font-weight: bold;
+}
+.TextoComentarios{
+	font-family: "Trebuchet MS", Arial, Courier, mono;
+	font-size: 20px;
+	font-weight: bold;
+	color: #737272;
+	text-shadow: 1px 1px 1px #FFF;
+}
+.TextoPaginacion{
+	font-family: "Trebuchet MS", Arial, Courier, mono;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3E3F41;
+}
+.error404403{
+	font-family: "Trebuchet MS", Arial, Courier, mono;
+	font-size: 20px;
+	font-weight: bold;
+	color: #3E3F41;
+}
+.miscas{
+	font-family: "Trebuchet MS", Arial, Courier, mono;
+	font-size: 14px;
+	color: #000;
+	width: 695px;
+	margin: 30px auto;
+	padding-top: 10px;
+	text-align: justify;
+}
+.linka{
+	color: #657D33;
+	font-weight: bold;
+}
+.fuente{
+	font-family: "Trebuchet MS", Arial, Courier, mono;
+	font-size: 12px;
+	color: #089F55;
+	float: left;
+	font-weight: bold;
+}
+.fuenteD{
+	color: #4977AB;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

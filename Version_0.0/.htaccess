@@ -1,0 +1,22 @@
+php_flag register_globals on
+
+ErrorDocument 404 http://www.hitobito.com.ar/404.php
+ErrorDocument 403 http://www.hitobito.com.ar/403.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on 
+	RewriteRule ^pagina([0-9]+)$ index.php?pagina=$1
+	RewriteRule video\.pagina([0-9]+)$ video.php?pagina=$1
+	RewriteRule imagen\.pagina([0-9]+)$ imagen.php?pagina=$1
+	RewriteRule post_([0-9]+)\.html$ post.php?id=$1
+	
+	
+	RewriteRule video$ video.php
+	RewriteRule imagen$ imagen.php
+	RewriteRule inicio$ index.php
+	RewriteRule admin$ admin.php
+	RewriteRule legal$ legal.php
+	RewriteRule licencia$ licencia.php
+	RewriteRule beta$ beta.php
+</IfModule>
+

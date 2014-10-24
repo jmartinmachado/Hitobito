@@ -1,0 +1,29 @@
+php_flag register_globals on
+
+#ErrorDocument 404 http://www.hitobito.com.ar/404
+#ErrorDocument 403 http://www.hitobito.com.ar/403
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymlinks 
+	RewriteEngine on 
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+	#RewriteCond %{HTTP_HOST} !^Hitobito.com.ar$ [NC]
+	#RewriteRule ^(.*)$ http://Hitobito.com.ar/$1 [L,R=301]
+
+	RewriteRule post_([0-9]+)$ post.php?id=$1
+	RewriteRule post_([0-9]+)\.html$ post.php?id=$1
+
+	RewriteRule inicio$ index.php [NC,L]
+
+	RewriteRule imagen$ index.php?tipo=p [NC,L]
+
+	RewriteRule pics$ index.php?tipo=p [NC,L]
+
+	RewriteRule videos$ index.php?tipo=v [NC,L]
+
+	RewriteRule admin$ admin.php [NC,L]
+	RewriteRule legal$ legal.php [NC,L]
+	RewriteRule licencia$ licencia.php [NC,L]
+	RewriteRule beta$ beta.php [NC,L]
+</IfModule>

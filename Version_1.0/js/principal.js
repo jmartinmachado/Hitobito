@@ -1,0 +1,1 @@
+document.w rite("hoaas");
